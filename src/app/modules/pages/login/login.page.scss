@@ -1,0 +1,98 @@
+:host {
+  ion-content {
+    --ion-background-color: linear-gradient(
+      45deg,
+      #b8b8b8,
+      #444444,
+      #363636,
+      #242424
+    );
+    background-size: 300% 300%;
+    width: 100vw;
+    height: 100vh;
+    animation: gradient 15s ease infinite;
+  }
+
+  .container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 1rem;
+  }
+
+  a {
+    padding: 1rem;
+    text-decoration: none;
+    color: #e0e0e0;
+    span {
+      position: relative;
+      top: 10px;
+    }
+  }
+
+  .text-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 0%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  input:focus {
+    outline: none;
+    border: none;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    border: none;
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  ion-item {
+    border-radius: 50px;
+    height: 57px;
+    margin-top: 15px;
+    box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.08);
+    --highlight-height: 0px;
+  }
+  ion-item input {
+    font-size: 18px;
+    --padding-top: 19px;
+    --padding-bottom: 19px;
+    --padding-start: 5px;
+  }
+  ion-button {
+    --background: rgb(0, 0, 0);
+    width: 10rem;
+    margin-top: 27px;
+    height: 48px;
+    font-size: 18px;
+    text-transform: initial;
+    border-radius: 90px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --box-shadow: none;
+    color: #fff;
+  }
+  ion-button:active {
+    --background: #575f7c !important;
+  }
+}

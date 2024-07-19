@@ -1,0 +1,17 @@
+:host {
+  ion-buttons {
+    position: fixed;
+  }
+  ion-toolbar {
+    --padding-bottom: 10rem;
+  }
+  ion-header,
+  ion-header ion-toolbar:last-child {
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .menu-items {
+    padding: 1rem;
+  }
+}

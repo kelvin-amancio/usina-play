@@ -1,0 +1,27 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <ion-item lines="none">
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input autocomplete="email" formControlName="email"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input autocomplete="current-password" formControlName="password"></ion-input>
+      </ion-item>
+
+      <a [routerLink]="['/siginup']" routerLinkActive="router-link-active"><span>Não
+          possui
+          conta?</span></a>
+
+      <div class="text-center">
+        <ion-button type="submit" class="ion-margin-top btn-1" autocomplete="current-password" type="submit"
+          shape="round">
+          <ion-icon name="log-in-outline"></ion-icon>
+          Login
+        </ion-button>
+      </div>
+    </form>
+  </div>
+</ion-content>

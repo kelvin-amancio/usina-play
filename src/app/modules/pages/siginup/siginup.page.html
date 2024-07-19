@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <form [formGroup]="registerForm" (ngSubmit)="signup()">
+      <ion-item lines="none">
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input formControlName="email"></ion-input>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-label position="stacked">Password</ion-label>
+        <ion-input formControlName="password"></ion-input>
+      </ion-item>
+
+      <a [routerLink]="['/login']" routerLinkActive="router-link-active"><span>Possui conta?</span></a>
+
+      <div class="text-center">
+        <ion-button type="submit" class="ion-margin-top btn-1" autocomplete="current-password" type="submit"
+          shape="round">
+          <ion-icon name="log-in-outline"></ion-icon>
+          Registrar
+        </ion-button>
+      </div>
+    </form>
+  </div>
+</ion-content>

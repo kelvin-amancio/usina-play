@@ -119,4 +119,23 @@
     padding: 1rem;
   }
 
+
+  @media only screen and (max-width: 600px) {
+    .menu-items {
+      gap: 1rem;
+    }
+
+    .menu-goals-content {
+      width: 18rem;
+
+      span {
+        font-size: 0.6rem;
+        margin-top: 0.3rem;
+      }
+    }
+
+    .icon-goal {
+      font-size: 0.6rem;
+    }
+  }
 }

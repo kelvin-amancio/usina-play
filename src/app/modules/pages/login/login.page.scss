@@ -1,16 +1,13 @@
 :host {
   ion-content {
-    --ion-background-color: linear-gradient(
-      45deg,
-      #b8b8b8,
-      #444444,
-      #363636,
-      #242424
-    );
+    --ion-background-color: linear-gradient(45deg,
+        rgba(235, 98, 6, 0.596),
+        #0a0a0aa6,
+        #0c0c0ca1,
+        rgba(235, 98, 6, 0.705));
     background-size: 300% 300%;
     width: 100vw;
     height: 100vh;
-    animation: gradient 15s ease infinite;
   }
 
   .container {
@@ -25,11 +22,16 @@
   a {
     padding: 1rem;
     text-decoration: none;
-    color: #e0e0e0;
+
     span {
       position: relative;
       top: 10px;
+      color: #e0e0e0;
     }
+  }
+
+  span:hover {
+    color: #e0e0e0;
   }
 
   .text-center {
@@ -37,22 +39,16 @@
     justify-content: center;
   }
 
-  @keyframes gradient {
-    0% {
-      background-position: 0%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+
+  ion-input {
+    margin-top: -0.5rem;
   }
 
   input:focus {
     outline: none;
     border: none;
   }
+
   input:-webkit-autofill,
   input:-webkit-autofill:hover,
   input:-webkit-autofill:focus,
@@ -69,17 +65,25 @@
 
   ion-item {
     border-radius: 50px;
-    height: 57px;
+    height: 60px;
     margin-top: 15px;
     box-shadow: 1px 8px 8px 0px rgba(0, 0, 0, 0.08);
     --highlight-height: 0px;
+
+    ion-label {
+      padding: 0.2rem;
+    }
   }
-  ion-item input {
-    font-size: 18px;
-    --padding-top: 19px;
-    --padding-bottom: 19px;
-    --padding-start: 5px;
+
+  ion-item {
+    input {
+      font-size: 18px;
+      --padding-top: -10px;
+      --padding-bottom: 19px;
+      --padding-start: 5px;
+    }
   }
+
   ion-button {
     --background: rgb(0, 0, 0);
     width: 10rem;
@@ -92,7 +96,8 @@
     --box-shadow: none;
     color: #fff;
   }
+
   ion-button:active {
-    --background: #575f7c !important;
+    --background: #3f3e3e !important;
   }
 }

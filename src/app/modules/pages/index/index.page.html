@@ -3,16 +3,42 @@
 <ion-content [fullscreen]="true">
   <ion-header>
     <ion-toolbar>
+
       <div class="menu-items">
         <ion-buttons slot="start">
           <ion-menu-button></ion-menu-button>
         </ion-buttons>
+        <img src="./assets/icon/Logo_usina.png" class="logo" alt="Logo">
+        <ion-buttons slot="end">
+          <div id="circle"></div>
+          <ion-badge><ion-icon name="notifications-outline"></ion-icon></ion-badge>
+        </ion-buttons>
       </div>
+        <div class="menu-user"> 
+         <img src="./assets/images/perfil.png" class="perfil" alt="Logo">
+        
+           <div class="menu-user-text">
+              <h3>Leonardo Santos</h3>
+              <span>Nível Roxo</span>
+           </div>
+       </div>
+
+        <div class="menu-goals-content">
+            <div class="my-body">
+              <ion-icon class="icon-goal" name="accessibility-outline"></ion-icon>
+              <span>MEU CORPO</span>
+            </div>
+            <div class="my-goals">
+              <ion-icon class="icon-goal" name="trophy-outline"></ion-icon>
+              <span>OBJETIVOS E CONQUISTAS</span>
+            </div>
+       </div>
+
     </ion-toolbar>
   </ion-header>
 
-  <app-slide [slides]="slidesPersonal" title="PERSONAL ONLINE"></app-slide>
-  <app-slide [slides]="slidesProgram" title="PROGRAMAS"></app-slide>
+  <app-slide [slides]="slidesPersonal" title="PERSONAL ONLINE" [ionFabeHidden]=ionFabValue></app-slide>
+  <app-slide [slides]="slidesProgram" title="PROGRAMAS" [ionBadgeHidden]=ionFabValue></app-slide>
   <app-slide [slides]="slidesContent" title="CONTEÚDOS"></app-slide>
 
 </ion-content>

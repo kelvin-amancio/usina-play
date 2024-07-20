@@ -11,15 +11,14 @@ import { IonContent, IonHeader, IonicSlides, IonTitle, IonToolbar } from '@ionic
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
-export class SlidePage implements OnInit {
+export class SlidePage  {
   @ViewChild('swiper')
   swiperRef: ElementRef | undefined;
   @Input() slides: Array<any> = [];
   @Input() title: string = "";
+  @Input() ionFabeHidden: boolean = false;
+  @Input() ionBadgeHidden: boolean = false;
+
   swiperSlides = [IonicSlides];
-
-  constructor() { }
-
-  ngOnInit() { }
 
 }

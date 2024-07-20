@@ -1,20 +1,96 @@
 .content {
+  height: 24vh;
+
   h2 {
     color: #fff;
     margin-left: 2.4em;
+    font-size: 1.2rem;
+    width: 100%;
   }
-  height: 24vh;
+
+  .flex {
+
+    display: flex;
+  }
 
   swiper-container {
     margin-right: 3rem;
+    width: 100%;
+
     swiper-slide {
       height: 19vh;
+
       img {
         width: 100%;
         height: 100%;
         border-radius: 5px;
         border-radius: 30px;
       }
+
     }
   }
+
+
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .slide-text-cotent {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 4rem;
+
+    ion-fab-button {
+      font-size: 1.5rem;
+      margin-top: 0.3rem;
+    }
+
+    span {
+      margin-left: 0.5rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  ion-fab-button {
+    margin-inline-start: 10px !important;
+    width: 25px;
+    height: 25px;
+    --background: transparent !important;
+    border: 1px solid rgb(235, 98, 6);
+    border-radius: 50%;
+
+    ion-icon {
+      font-size: 15px;
+      color: rgb(235, 98, 6);
+    }
+  }
+
+  ion-badge {
+    border-radius: 27px;
+    font-size: 0.5rem;
+    width: 10px;
+    background-color: orange;
+    height: 13px;
+    background: rgb(235, 98, 6);
+    box-shadow: 0 0 20px #ff9800, 0 0 8px #ff9800, 0 0 40px #ff9800, 0 0 50px #ff9800;
+    --padding-end: 20px;
+    --padding-start: 20px;
+
+    span {
+      position: relative;
+      right: 11.5px;
+    }
+  }
+
+
 }
